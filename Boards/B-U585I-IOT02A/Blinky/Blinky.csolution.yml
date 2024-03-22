@@ -1,0 +1,32 @@
+# A solution is a collection of related projects that share same base configuration.
+solution:
+  created-for: CMSIS-Toolbox@2.0.0
+  cdefault:
+  compiler: AC6
+
+  # List the packs that define the device and/or board.
+  packs:
+    - pack: Keil::B-U585I-IOT02A_BSP
+    - pack: Keil::STM32U5xx_DFP
+    - pack: ARM::CMSIS
+    - pack: ARM::CMSIS-RTX
+
+  # List different hardware targets that are used to deploy the solution.
+  target-types:
+    - type: B-U585I-IOT02A
+      board: STMicroelectronics::B-U585I-IOT02A
+      device: STMicroelectronics::STM32U585AIIx
+
+  # List of different build configurations.
+  build-types:
+    - type: Debug
+      debug: on
+      optimize: none
+
+    - type: Release
+      debug: off
+      optimize: balanced
+
+  # List related projects.
+  projects:
+    - project: Blinky.cproject.yml

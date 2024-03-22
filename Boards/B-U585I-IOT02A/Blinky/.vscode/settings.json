@@ -1,0 +1,12 @@
+{
+    "cmsis-csolution.actions": [
+        {
+            "path": "Blinky.csolution.yml",
+            "target": "B-U585I-IOT02A",
+            "config": {
+                "run": "Flash Device",
+                "debug": "Arm Debugger"
+            }
+        }
+    ]
+}
