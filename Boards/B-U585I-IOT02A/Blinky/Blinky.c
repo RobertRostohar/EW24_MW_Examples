@@ -17,6 +17,8 @@
  * limitations under the License.
  *---------------------------------------------------------------------------*/
 
+#include <stdio.h>
+
 #include "main.h"
 
 #include "cmsis_os2.h"                  // ::CMSIS:RTOS2
@@ -96,6 +98,8 @@ int32_t app_initialize (void) {
  * Application main thread
  *----------------------------------------------------------------------------*/
 __NO_RETURN void app_main (void *argument) {
+
+  printf("Blinky example\n");
 
   tid_thrLED = osThreadNew(thrLED, NULL, NULL);         // Create LED thread
   tid_thrButton = osThreadNew(thrButton, NULL, NULL);   // Create Button thread

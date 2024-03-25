@@ -64,6 +64,7 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
+extern int     stdio_init     (void);
 extern int32_t app_initialize (void);
 extern void    app_main (void *argument);
 /* USER CODE END EFP */
