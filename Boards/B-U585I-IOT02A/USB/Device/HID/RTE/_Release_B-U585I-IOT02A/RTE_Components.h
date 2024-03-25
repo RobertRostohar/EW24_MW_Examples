@@ -51,7 +51,7 @@
 /* Keil::CMSIS Driver:USB Device@3.0.0 */
 #define RTE_Drivers_USBD0               /* Driver USBD0 */
         #define RTE_Drivers_USBD1               /* Driver USBD1 */
-/* Keil::CMSIS Driver:VIO:Board&B-U585I-IOT02A@1.2.0 */
+/* Keil::CMSIS Driver:VIO:Board&B-U585I-IOT02A@2.0.0 */
 #define RTE_VIO_BOARD
         #define RTE_VIO_B_U585I_IOT02A
 /* Keil::Device:Startup@1.2.0 */

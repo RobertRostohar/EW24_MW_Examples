@@ -27,7 +27,6 @@ project:
     - component: Keil::CMSIS Driver:USART
     - component: Keil::CMSIS Driver:USB Device
     - component: Keil::CMSIS Driver:VIO:Board&B-U585I-IOT02A
-    - component: Keil::Board Support&B-U585I-IOT02A:Drivers:Basic I/O
     - component: Keil::USB&MDK:CORE&Release
     - component: Keil::USB&MDK:Device
     - component: Keil::USB&MDK:Device:HID

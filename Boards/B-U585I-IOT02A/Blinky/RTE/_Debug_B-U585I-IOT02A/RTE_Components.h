@@ -48,7 +48,7 @@
         #define RTE_CMSIS_Driver_USART21        /* Driver USART21 (LPUART1) */
         #define RTE_CMSIS_Driver_USART22        /* Driver USART22 (LPUART2) */
         #define RTE_CMSIS_Driver_USART23        /* Driver USART23 (LPUART3) */
-/* Keil::CMSIS Driver:VIO:Board&B-U585I-IOT02A@1.2.0 */
+/* Keil::CMSIS Driver:VIO:Board&B-U585I-IOT02A@2.0.0 */
 #define RTE_VIO_BOARD
         #define RTE_VIO_B_U585I_IOT02A
 /* Keil::Device:Startup@1.2.0 */
