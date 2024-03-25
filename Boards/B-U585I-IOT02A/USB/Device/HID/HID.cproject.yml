@@ -8,6 +8,11 @@ project:
         - file: USBD_User_HID.c
         - file: retarget_stdio.c
 
+  generators:
+    options:
+    - generator: CubeMX
+      path: STM32CubeMX/B-U585I-IOT02A
+
   # List components to use for your application.
   # A software component is a re-usable unit that may be configurable.
   components:
