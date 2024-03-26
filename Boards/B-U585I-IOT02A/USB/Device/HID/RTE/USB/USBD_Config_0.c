@@ -30,7 +30,7 @@
 //     <o>Max Endpoint 0 Packet Size
 //     <i>Maximum packet size for Endpoint 0 (bMaxPacketSize0).
 //       <8=>8 Bytes <16=>16 Bytes <32=>32 Bytes <64=>64 Bytes
-#define USBD0_MAX_PACKET0               8
+#define USBD0_MAX_PACKET0               64
 
 //     <o.0..15>Vendor ID <0x0000-0xFFFF>
 //     <i>Vendor ID assigned by USB-IF (idVendor).
@@ -38,7 +38,7 @@
 
 //     <o.0..15>Product ID <0x0000-0xFFFF>
 //     <i>Product ID assigned by manufacturer (idProduct).
-#define USBD0_DEV_DESC_IDPRODUCT        0x0000
+#define USBD0_DEV_DESC_IDPRODUCT        0x5901
 
 //     <o.0..15>Device Release Number <0x0000-0xFFFF>
 //     <i>Device Release Number in binary-coded decimal (bcdDevice)
@@ -98,7 +98,7 @@
 //   <i>These settings are used to create the Microsoft OS Descriptors.
 //     <e.0>OS String
 //     <i>Enable creation of Microsoft OS String and Extended Compat ID OS Feature Descriptors.
-#define USBD0_OS_DESC_EN                1
+#define USBD0_OS_DESC_EN                0
 
 //       <o.0..7>Vendor Code <0x01-0xFF>
 //       <i>Specifies Vendor Code used to retrieve OS Feature Descriptors.
