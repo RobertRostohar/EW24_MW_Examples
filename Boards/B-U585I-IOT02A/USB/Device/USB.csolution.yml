@@ -6,13 +6,13 @@ solution:
 
   # List the packs that define the device and/or board.
   packs:
-    - pack: Keil::B-U585I-IOT02A_BSP
-    - pack: Keil::STM32U5xx_DFP
-    - pack: ARM::CMSIS
-    - pack: ARM::CMSIS-Compiler
-    - pack: ARM::CMSIS-Driver_STM32
-    - pack: ARM::CMSIS-RTX
-    - pack: Keil::MDK-Middleware
+    - pack: Keil::B-U585I-IOT02A_BSP@2.0.0-dev2
+    - pack: Keil::STM32U5xx_DFP@3.0.0-extgen0
+    - pack: ARM::CMSIS@6.0.0
+    - pack: ARM::CMSIS-Compiler@2.0.0
+    - pack: ARM::CMSIS-Driver_STM32@1.0.0-dev39+gbd9215b
+    - pack: ARM::CMSIS-RTX@5.8.0
+    - pack: Keil::MDK-Middleware@8.0.0-dev26+g8f55aaa
 
   # List different hardware targets that are used to deploy the solution.
   target-types:

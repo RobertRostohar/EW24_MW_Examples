@@ -50,8 +50,8 @@ project:
     - component: ARM::CMSIS-Compiler:STDIN:Custom
     - component: ARM::CMSIS-Compiler:STDOUT:Custom
     - component: ARM::CMSIS-Compiler:STDERR:Custom
-    - component: Keil::CMSIS Driver:USART
-    - component: Keil::CMSIS Driver:Ethernet MAC
+    - component: Keil::CMSIS Driver:USART@3.0.0
+    - component: Keil::CMSIS Driver:Ethernet MAC@3.0.0
     - component: Keil::CMSIS Driver:Ethernet PHY:LAN8742A
     - component: ARM::CMSIS Driver:VIO:Custom
     - component: Keil::Network&MDK:CORE&IPv4/IPv6 Release
