@@ -4,8 +4,9 @@ project:
   groups:
     - group: Source Files
       files:
-        - file: HID.c
-        - file: USBD_User_HID.c
+        - file: MassStorage.c
+        - file: MemoryDiskImage.c
+        - file: USBD_User_MSC_0.c
         - file: retarget_stdio.c
 
   generators:
@@ -29,4 +30,4 @@ project:
     - component: Keil::CMSIS Driver:VIO:Board&B-U585I-IOT02A
     - component: Keil::USB&MDK:CORE&Release
     - component: Keil::USB&MDK:Device
-    - component: Keil::USB&MDK:Device:HID
+    - component: Keil::USB&MDK:Device:MSC

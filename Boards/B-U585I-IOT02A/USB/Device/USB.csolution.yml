@@ -33,3 +33,4 @@ solution:
   # List related projects.
   projects:
     - project: HID/HID.cproject.yml
+    - project: MassStorage/MassStorage.cproject.yml
