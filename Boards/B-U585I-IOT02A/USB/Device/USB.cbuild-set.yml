@@ -1,4 +1,0 @@
-cbuild-set:
-  generated-by: csolution version 2.3.0-dev0
-  contexts:
-    - context: HID.Debug+B-U585I-IOT02A
