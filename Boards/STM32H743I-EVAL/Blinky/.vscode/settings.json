@@ -1,0 +1,12 @@
+{
+    "cmsis-csolution.actions": [
+        {
+            "path": "Blinky.csolution.yml",
+            "target": "STM32H743I-EVAL",
+            "config": {
+                "run": "Flash Device",
+                "debug": "Arm Debugger"
+            }
+        }
+    ]
+}
