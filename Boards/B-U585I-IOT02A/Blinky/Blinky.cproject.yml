@@ -2,6 +2,9 @@
 project:
 
   groups:
+    - group: Documentation
+      files:
+        - file: README.md
     - group: Source Files
       files:
         - file: Blinky.c
