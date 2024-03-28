@@ -121,6 +121,7 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority) {
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
