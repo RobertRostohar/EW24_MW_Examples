@@ -70,17 +70,17 @@ __NO_RETURN void app_main (void *argument) {
   netStatus retv;
   (void)argument;
 
-  printf("MW Network      \n\r");
-  printf("SMTP Client     \n\r");
-  printf("Sending email...\n\r");
+  printf("MW Network      \n");
+  printf("SMTP Client     \n");
+  printf("Sending email...\n");
 
   netInitialize();
 
   retv = netSMTPc_SendMail(&mail, &server);
   if (retv == netOK) {
-    printf("Success, email sent.\n\r");
+    printf("Success, email sent.\n");
   } else {
-    printf("Send email failed.\n\r");
+    printf("Send email failed.\n");
   }
 
   osThreadExit();
