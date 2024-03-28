@@ -60,7 +60,7 @@ static void print_address (void) {
                                         ip4_addr, sizeof(ip4_addr)) == netOK) {
   /* Print IPv4 network address */
     netIP_ntoa(NET_ADDR_IP4, ip4_addr, ip4_ascii, sizeof(ip4_ascii));
-    printf("IP4=%-15s", ip4_ascii);
+    printf("IP4=%s\n", ip4_ascii);
   }
 #endif
 
@@ -72,8 +72,7 @@ static void print_address (void) {
                                         ip6_addr, sizeof(ip6_addr)) == netOK) {
     /* Print IPv6 network address (MDK-Pro only) */
     netIP_ntoa(NET_ADDR_IP6, ip6_addr, ip6_ascii, sizeof(ip6_ascii));
-    printf("IP6=%.16s", ip6_ascii);
-    printf("%s",ip6_ascii+16);
+    printf("IP6:%s\n", ip_ascii);
   }
 #endif
 }
