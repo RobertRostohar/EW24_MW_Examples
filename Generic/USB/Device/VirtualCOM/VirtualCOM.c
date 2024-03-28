@@ -6,6 +6,8 @@
  * Purpose: USB Device Virtual COM Port demonstration
  *----------------------------------------------------------------------------*/
 
+#include <stdio.h>
+
 #include "main.h"
 
 #include "cmsis_os2.h"                  // ::CMSIS:RTOS2
@@ -33,6 +35,8 @@ int32_t app_initialize (void) {
  *----------------------------------------------------------------------------*/
 void app_main (void *argument) {
   (void)argument;
+
+  printf("USB Device Virtual COM example\n");
 
   USBD_Initialize(0U);                  // USB Device 0 Initialization
   USBD_Connect   (0U);                  // USB Device 0 Connect

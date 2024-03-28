@@ -52,7 +52,7 @@ static __NO_RETURN void Terminal (void *argument) {
 
   (void)argument;
 
-  printf("IP4:Waiting for DHCP");
+  printf("IP4:Waiting for DHCP\n");
 
   /* Print Link-local IPv6 address */
   netIF_GetOption(NET_IF_CLASS_ETH,
@@ -60,8 +60,7 @@ static __NO_RETURN void Terminal (void *argument) {
 
   netIP_ntoa(NET_ADDR_IP6, ip_addr, ip_ascii, sizeof(ip_ascii));
 
-  printf("IP6:%.16s", ip_ascii);
-  printf("%s", ip_ascii+16);
+  printf("IP6:%s\n", ip_ascii);
 
   while(1) {
     /* Wait for signal from DHCP */
@@ -73,7 +72,7 @@ static __NO_RETURN void Terminal (void *argument) {
 
     netIP_ntoa(NET_ADDR_IP4, ip_addr, ip_ascii, sizeof(ip_ascii));
 
-    printf("IP4:%-16s",ip_ascii);
+    printf("IP4:%s\n",ip_ascii);
   }
 }
 
@@ -90,6 +89,8 @@ int32_t app_initialize (void) {
  *----------------------------------------------------------------------------*/
 __NO_RETURN void app_main (void *argument) {
   (void)argument;
+
+  printf("Network SNMP Agent example\n");
 
   netInitialize();
   register_mib_table();

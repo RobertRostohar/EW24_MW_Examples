@@ -6,6 +6,8 @@
  * Purpose: USB Device - Human Interface Device example
  *----------------------------------------------------------------------------*/
 
+#include <stdio.h>
+
 #include "main.h"
 
 #include "cmsis_os2.h"                  // ::CMSIS:RTOS2
@@ -37,6 +39,8 @@ __NO_RETURN void app_main (void *argument) {
   uint8_t but_prev = 0U;
 
   (void)argument;
+
+  printf("USB Device HID example\n");
 
   USBD_Initialize(0U);                  // USB Device 0 Initialization
   USBD_Connect   (0U);                  // USB Device 0 Connect
