@@ -15,19 +15,41 @@ t <form action=network.cgi method=get name=cgi>
 t <input type=hidden value="net" name=pg>
 t <table border=0 width=99%><font size="3">
 t <tr bgcolor=#aaccff>
-t  <th width=40%>Item</th>
-t  <th width=60%>Setting</th></tr>
-# Here begin data setting which is formatted in HTTP_CGI.C module
-t <tr><td><img src=pabb.gif>IP Address</td>
-c a i <td><input type=text name=ip value="%s" size=18 maxlength=18></td></tr>
-t <tr><td><img src=pabb.gif>Network Mask</td>
-c a m <td><input type=text name=msk value="%s" size=18 maxlength=18></td></tr>
-t <tr><td><img src=pabb.gif>Default Gateway</td>
-c a g <td><input type=text name=gw value="%s" size=18 maxlength=18></td></tr>
-t <tr><td><img src=pabb.gif>Primary DNS Server</td>
-c a p <td><input type=text name=pdns value="%s" size=18 maxlength=18></td></tr>
-t <tr><td><img src=pabb.gif>Secondary DNS Server</td>
-c a s <td><input type=text name=sdns value="%s" size=18 maxlength=18></td></tr>
+t  <th width=30%>Item</th>
+t  <th width=20%>IPv4</th>
+t  <th width=50%>IPv6</th>
+t </tr>
+# Here begin data setting which is formatted in HTTP_Server_CGI.c module
+t <tr>
+t      <td><img src=pabb.gif>Link-local Address</td>
+t      <td><input type=text name=l4 value=""   size=15 maxlength=15 disabled></td>
+c a l6 <td><input type=text name=l6 value="%s" size=40 maxlength=40 disabled></td>
+t </tr>
+t <tr>
+t      <td><img src=pabb.gif>IP Address</td>
+c a i4 <td><input type=text name=i4 value="%s" size=15 maxlength=15></td>
+c a i6 <td><input type=text name=i6 value="%s" size=40 maxlength=40></td>
+t </tr>
+t <tr>
+t      <td><img src=pabb.gif>Network Mask</td>
+c a m4 <td><input type=text name=m4 value="%s" size=15 maxlength=15></td>
+t      <td><input type=text name=m6 value=""   size=40 maxlength=40 disabled></td>
+t </tr>
+t <tr>
+t      <td><img src=pabb.gif>Default Gateway</td>
+c a g4 <td><input type=text name=g4 value="%s" size=15 maxlength=15></td>
+c a g6 <td><input type=text name=g6 value="%s" size=40 maxlength=40></td>
+t </tr>
+t <tr>
+t      <td><img src=pabb.gif>Primary DNS Server</td>
+c a p4 <td><input type=text name=p4 value="%s" size=15 maxlength=15></td>
+c a p6 <td><input type=text name=p6 value="%s" size=40 maxlength=40></td>
+t </tr>
+t <tr>
+t      <td><img src=pabb.gif>Secondary DNS Server</td>
+c a s4 <td><input type=text name=s4 value="%s" size=15 maxlength=15></td>
+c a s6 <td><input type=text name=s6 value="%s" size=40 maxlength=40></td>
+t </tr>
 t </font></table>
 # Here begin button definitions
 t <p align=center>
