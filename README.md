@@ -17,3 +17,8 @@
  - [MDK-Middleware File System](./Boards/STM32H743I-EVAL/FileSystem)
  - [MDK-Middleware Network](./Boards/STM32H743I-EVAL/Network)
  - [MDK-Middleware USB Device](./Boards/STM32H743I-EVAL/USB/Device)
+
+## Generic board independent examples
+ - [MDK-Middleware File System](./Generic/FileSystem)
+ - [MDK-Middleware Network](./Generic/Network)
+ - [MDK-Middleware USB Device](./Generic/USB/Device)
