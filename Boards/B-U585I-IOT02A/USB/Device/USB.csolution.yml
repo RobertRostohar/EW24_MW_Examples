@@ -6,7 +6,7 @@ solution:
 
   # List the packs that define the device and/or board.
   packs:
-    - pack: Keil::B-U585I-IOT02A_BSP@2.0.0-dev2
+    - pack: Keil::B-U585I-IOT02A_BSP@2.0.0-dev3
     - pack: Keil::STM32U5xx_DFP@3.0.0-extgen0
     - pack: ARM::CMSIS@6.0.0
     - pack: ARM::CMSIS-Compiler@2.0.0
