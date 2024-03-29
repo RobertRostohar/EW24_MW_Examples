@@ -1,0 +1,72 @@
+# A project translates into one executable or library.
+project:
+
+  optimize: balanced
+
+  define:
+    - USE_FULL_LL_DRIVER
+    - USE_HAL_DRIVER
+    - STM32H7S7xx
+
+  add-path:
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Inc
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Inc/Legacy
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/CMSIS/Device/ST/STM32H7RSxx/Include
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/CMSIS/Include
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Boot/Core/Inc
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/boot
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/sal
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/psram
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/sdcard
+    - ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/user
+
+  linker:
+    - script: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/MDK-ARM/Boot/stm32h7s7xx_flash.sct
+
+  groups:
+    - group: CubeMX
+      files:
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/MDK-ARM/startup_stm32h7s7xx.s
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Boot/Core/Src/system_stm32h7rsxx.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Boot/Core/Src/main.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Boot/Core/Src/extmem_manager.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Boot/Core/Src/stm32h7rsxx_it.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Boot/Core/Src/stm32h7rsxx_hal_msp.c
+    - group: STM32 HAL Driver
+      files:
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_cortex.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_rcc.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_rcc_ex.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_flash.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_flash_ex.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_gpio.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_dma.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_dma_ex.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pwr.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pwr_ex.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_exti.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_ll_rcc.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_ll_utils.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_ll_exti.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_tim.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_tim_ex.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_xspi.c
+    - group: STM32 ExtMem Manager
+      files:
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/stm32_extmem.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_xip.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_sd.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_data.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/psram/stm32_psram_driver.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/sdcard/stm32_sdcard_driver.c
+        - file: ../STM32CubeMX/STM32H7S78-DK/STM32CubeMX/Middlewares/ST/STM32_ExtMem_Manager/user/stm32_user_driver.c
+
+  # List components to use for your application.
+  # A software component is a re-usable unit that may be configurable.
+  components:
+    - component: ARM::CMSIS:CORE

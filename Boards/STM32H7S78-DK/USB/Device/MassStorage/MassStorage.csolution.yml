@@ -12,6 +12,7 @@ solution:
     - pack: ARM::CMSIS-Compiler@2.0.0
     - pack: ARM::CMSIS-Driver_STM32@1.0.0-dev39+gbd9215b
     - pack: ARM::CMSIS-RTX@5.8.0
+    - pack: Keil::MDK-Middleware@8.0.0-dev26+g8f55aaa
 
   # List different hardware targets that are used to deploy the solution.
   target-types:
