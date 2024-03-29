@@ -35,11 +35,11 @@
 //   <e>Locate Drive Cache and Drive Buffer
 //   <i>Some microcontrollers support DMA only in specific memory areas and
 //   <i>require to locate the drive buffers at a fixed address.
-#define MC0_CACHE_RELOC         0
+#define MC0_CACHE_RELOC         1
 
 //     <o>Base address <0x0000-0xFFFFFE00:0x200>
 //     <i>Set buffer base address to RAM areas that support DMA with the drive.
-#define MC0_CACHE_ADDR          0x7FD00000
+#define MC0_CACHE_ADDR          0x2407C000
 
 //   </e>
 //   <o>Filename Cache Size <0-1000000>
