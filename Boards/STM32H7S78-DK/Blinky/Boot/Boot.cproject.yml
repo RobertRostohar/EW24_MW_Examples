@@ -1,6 +1,8 @@
 # A project translates into one executable or library.
 project:
 
+  optimize: balanced
+
   define:
     - USE_FULL_LL_DRIVER
     - USE_HAL_DRIVER
