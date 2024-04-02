@@ -30,7 +30,7 @@ Examples for STMicroelectronics STM32 based microcontrollers feature the **STM32
 ## Workflow
  - Open example base directory which contains the vcpkg configuration file (`vcpkg-configuration.json`) in VS Code. Available example base directories are listed below.
  - `Arm Environment Manager` extension will activate the environment with the required Arm Tools (configured with `vcpkg-configuration.json`).
- - Scripts for runnung (with flashing) and debugging are provided (`.vscode` sub-directory) for out of box experience.
+ - Scripts for running (with flashing) and debugging are provided (`.vscode` sub-directory) for out of box experience.
  - `Arm CMSIS csoluton` extension
    - Shows the solution with project files (including components) and provides shortcuts to commands for managing the project.
    - Use `Manage Software Components` to view selected Software Components.
