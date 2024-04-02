@@ -20,10 +20,11 @@ Examples for STMicroelectronics STM32 based microcontrollers feature the **STM32
  - [Keil.MDK-Middleware.8.0.0-dev26+g8f55aaa.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.MDK-Middleware.8.0.0-dev26+g8f55aaa.pack?csf=1&web=1&e=JWfcsU)
  - [ARM.CMSIS-Driver_STM32.1.0.0-dev39+gbd9215b.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/ARM.CMSIS-Driver_STM32.1.0.0-dev39+gbd9215b.pack?csf=1&web=1&e=5da3pg) for STM32 based microcontrollers
  - [Keil.STM32U5xx_DFP.3.0.0-extgen0.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32U5xx_DFP.3.0.0-extgen0.pack?csf=1&web=1&e=eNGhij) when using  B-U585I-IOT02A Board
- - [Keil.B-U585I-IOT02A_BSP.2.0.0-dev3.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.B-U585I-IOT02A_BSP.2.0.0-dev3.pack?csf=1&web=1&e=miebXe) when using  B-U585I-IOT02A Board
+ - [Keil.B-U585I-IOT02A_BSP.2.0.0-dev4.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.B-U585I-IOT02A_BSP.2.0.0-dev4.pack?csf=1&web=1&e=if5lN6) when using  B-U585I-IOT02A Board
  - [Keil.STM32H7RSxx_DFP.1.0.0-dev0.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7RSxx_DFP.1.0.0-dev0.pack?csf=1&web=1&e=6fptvF) when using STM32H7S78-DK Board
- - [Keil.STM32H7S78-DK_BSP.1.0.0-dev2.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7S78-DK_BSP.1.0.0-dev2.pack?csf=1&web=1&e=I1WDkL) when using STM32H7S78-DK Board
+ - [Keil.STM32H7S78-DK_BSP.1.0.0-dev3.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7S78-DK_BSP.1.0.0-dev3.pack?csf=1&web=1&e=2KzKkU) when using STM32H7S78-DK Board
  - [Keil.STM32H7xx_DFP.4.0.0-extgen2.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7xx_DFP.4.0.0-extgen2.pack?csf=1&web=1&e=LyHPLS) when using STM32H743I-EVAL Board
+ - [Keil.IMXRT1050-EVKB_BSP.1.2.0-dev0.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.IMXRT1050-EVKB_BSP.1.2.0-dev0.pack?csf=1&web=1&e=Ah4De6) when using Generic examples and layer detection
 
 
 ## Workflow
