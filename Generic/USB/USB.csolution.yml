@@ -5,10 +5,9 @@ solution:
 
   target-types:
     # Step 1: Specify your board
-    # - type: <name>
-      # board: <board_name>
+    # - type: <name> (example: B-U585I-IOT02A)
+      # board: <board_name> (example: STMicroelectronics::B-U585I-IOT02A)
     # Step 2: Run `cbuild setup USB.csolution.yml -l latest --update-rte` and use `cbuild-idx.yml` to identify variables
-    # Step 2: Run `csolution list layers -s USB.csolution.yml -l latest` to identify variables
       # variables:
       #   - Board-Layer: <board_layer>.clayer.yml
 

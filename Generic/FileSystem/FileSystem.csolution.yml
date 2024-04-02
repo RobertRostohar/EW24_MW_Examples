@@ -5,10 +5,9 @@ solution:
 
   target-types:
     # Step 1: Specify your board
-    # - type: <name>
-      # board: <board_name>
-    # Step 2: Run `cbuild setup USB.csolution.yml -l latest --update-rte` and use `cbuild-idx.yml` to identify variables
-    # Step 2: Run `csolution list layers -s USB.csolution.yml -l latest` to identify variables
+    # - type: <name> (example: EVKB-IMXRT1050)
+      # board: <board_name> (example: NXP::EVKB-IMXRT1050_MDK)
+    # Step 2: Run `cbuild setup FileSystem.csolution.yml -l latest --update-rte` and use `cbuild-idx.yml` to identify variables
       # variables:
       #   - Board-Layer: <board_layer>.clayer.yml
 
