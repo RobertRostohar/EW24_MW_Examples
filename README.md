@@ -20,7 +20,7 @@ Examples for STMicroelectronics STM32 based microcontrollers feature the **STM32
  - [Keil.MDK-Middleware.8.0.0-dev26+g8f55aaa.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.MDK-Middleware.8.0.0-dev26+g8f55aaa.pack?csf=1&web=1&e=JWfcsU)
  - [ARM.CMSIS-Driver_STM32.1.0.0-dev39+gbd9215b.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/ARM.CMSIS-Driver_STM32.1.0.0-dev39+gbd9215b.pack?csf=1&web=1&e=5da3pg) for STM32 based microcontrollers
  - [Keil.STM32U5xx_DFP.3.0.0-extgen0.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32U5xx_DFP.3.0.0-extgen0.pack?csf=1&web=1&e=eNGhij) when using  B-U585I-IOT02A Board
- - [Keil.B-U585I-IOT02A_BSP.2.0.0-dev4.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.B-U585I-IOT02A_BSP.2.0.0-dev4.pack?csf=1&web=1&e=if5lN6) when using  B-U585I-IOT02A Board
+ - [Keil.B-U585I-IOT02A_BSP.2.0.0-dev4.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.B-U585I-IOT02A_BSP.2.0.0-dev4.pack?csf=1&web=1&e=if5lN6) when using  B-U585I-IOT02A Board or Generic examples and layer detection
  - [Keil.STM32H7RSxx_DFP.1.0.0-dev0.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7RSxx_DFP.1.0.0-dev0.pack?csf=1&web=1&e=6fptvF) when using STM32H7S78-DK Board
  - [Keil.STM32H7S78-DK_BSP.1.0.0-dev3.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7S78-DK_BSP.1.0.0-dev3.pack?csf=1&web=1&e=2KzKkU) when using STM32H7S78-DK Board
  - [Keil.STM32H7xx_DFP.4.0.0-extgen2.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7xx_DFP.4.0.0-extgen2.pack?csf=1&web=1&e=LyHPLS) when using STM32H743I-EVAL Board
@@ -28,7 +28,7 @@ Examples for STMicroelectronics STM32 based microcontrollers feature the **STM32
 
 
 ## Workflow
- - Open example base directory which contains the vcpkg configuration file (`vcpkg-configuration.json`). Available example base directories are listed below.
+ - Open example base directory which contains the vcpkg configuration file (`vcpkg-configuration.json`) in VS Code. Available example base directories are listed below.
  - `Arm Environment Manager` extension will activate the environment with the required Arm Tools (configured with `vcpkg-configuration.json`).
  - Scripts for runnung (with flashing) and debugging are provided (`.vscode` sub-directory) for out of box experience.
  - `Arm CMSIS csoluton` extension
@@ -122,3 +122,37 @@ MDK-Middleware generic examples using board layers.
    - HID
    - Mass Storage
    - Virtual COM
+
+Compatible board layers (test packs)
+ - File System examples
+   - NXP EVKB-IMXRT1050 board
+ - Network examples
+   - NXP EVKB-IMXRT1050 board
+ - USB Device examples
+   - STMicroelectronics B-U585I-IOT02A board
+
+### Workflow
+ - Open example base directory in VS Code.
+ - Open `<solution_name>.csolution.yml` in Editor.
+ - Specify Board under `target-types`.
+   - Example for STMicroelectronics B-U585I-IOT02A board
+     ```yaml
+     target-types:
+       # Step 1: Specify your board
+       - type: B-U585I-IOT02A
+         board: STMicroelectronics::B-U585I-IOT02A
+     ```
+   - Example for NXP EVKB-IMXRT1050 board
+     ```yaml
+     target-types:
+       # Step 1: Specify your board
+       - type: EVKB-IMXRT1050
+         board: NXP::EVKB-IMXRT1050_MDK
+     ```
+ - Use the following command (in VS Code Terminal) which also detects compatible layers:  
+   `cbuild setup <solution_name>.csolution.yml -l latest --update-rte`
+ - Open `<solution_name>.cbuild-idx.yml` and examine detected `target-configurations` and their `Board-layer` variables.
+ - Copy desired `Board-Layer` variable to `<solution_name>.csolution.yml` under `target-types`.
+   >In case `.cproject.yml` is nested in sub-directories relative to the `.csolution.yml` file,
+    adjust the path by adding an additional `../` for each nesting level.
+ - Layers are now configured, select desired solution with `Open CMSIS Solution` and continue with typical workflow as described above.
