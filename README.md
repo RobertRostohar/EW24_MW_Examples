@@ -16,15 +16,15 @@ Examples for STMicroelectronics STM32 based microcontrollers feature the **STM32
 - Arm Debugger (when debugging, managed through vcpkg)
 - [STM32CubeMX 6.11](https://www.st.com/en/development-tools/stm32cubemx.html) (for STMicroelectronics STM32 based microcontrollers)
 
-### CMSIS [packs](https://armh-my.sharepoint.com/:f:/g/personal/robert_rostohar_arm_com/EnuIWjnKcVNDg-VG2W-FkV0BRFODClMq-mO1Gtbj1rOlTw?e=R0bK0f) (test versions): not yet published, require manual installation
- - [Keil.MDK-Middleware.8.0.0-dev26+g8f55aaa.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.MDK-Middleware.8.0.0-dev26+g8f55aaa.pack?csf=1&web=1&e=JWfcsU)
- - [ARM.CMSIS-Driver_STM32.1.0.0-dev39+gbd9215b.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/ARM.CMSIS-Driver_STM32.1.0.0-dev39+gbd9215b.pack?csf=1&web=1&e=5da3pg) for STM32 based microcontrollers
- - [Keil.STM32U5xx_DFP.3.0.0-extgen0.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32U5xx_DFP.3.0.0-extgen0.pack?csf=1&web=1&e=eNGhij) when using  B-U585I-IOT02A Board
- - [Keil.B-U585I-IOT02A_BSP.2.0.0-dev4.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.B-U585I-IOT02A_BSP.2.0.0-dev4.pack?csf=1&web=1&e=if5lN6) when using  B-U585I-IOT02A Board or Generic examples and layer detection
- - [Keil.STM32H7RSxx_DFP.1.0.0-dev0.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7RSxx_DFP.1.0.0-dev0.pack?csf=1&web=1&e=6fptvF) when using STM32H7S78-DK Board
- - [Keil.STM32H7S78-DK_BSP.1.0.0-dev3.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7S78-DK_BSP.1.0.0-dev3.pack?csf=1&web=1&e=2KzKkU) when using STM32H7S78-DK Board
- - [Keil.STM32H7xx_DFP.4.0.0-extgen2.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.STM32H7xx_DFP.4.0.0-extgen2.pack?csf=1&web=1&e=LyHPLS) when using STM32H743I-EVAL Board
- - [Keil.IMXRT1050-EVKB_BSP.1.2.0-dev0.pack](https://armh-my.sharepoint.com/:u:/r/personal/robert_rostohar_arm_com/Documents/Share/Packs/Keil.IMXRT1050-EVKB_BSP.1.2.0-dev0.pack?csf=1&web=1&e=Ah4De6) when using Generic examples and layer detection
+### CMSIS [packs](https://armh-my.sharepoint.com/:f:/g/personal/robert_rostohar_arm_com/EnuIWjnKcVNDg-VG2W-FkV0BRFODClMq-mO1Gtbj1rOlTw?e=uXoBFR) (test versions): not yet published, require manual installation
+ - [Keil.MDK-Middleware.8.0.0-dev26+g8f55aaa.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/Ef7cifJiWnFFmxRWs5M5vucBSnkRwP7RuFETqE-CGNhX5w?e=hZfkpW)
+ - [ARM.CMSIS-Driver_STM32.1.0.0-dev39+gbd9215b.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EcsBeFeCkwVEkXtx8W_aJnoByDo6QQARAVmzXC5AmL4LPw?e=yyI52p) for STM32 based microcontrollers
+ - [Keil.STM32U5xx_DFP.3.0.0-extgen0.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EVCZ53IRbz9BnrILt3T2XSYBX2v9ikAyFIaj6rFFUl-exA?e=YkyzK8) when using  B-U585I-IOT02A Board
+ - [Keil.B-U585I-IOT02A_BSP.2.0.0-dev4.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/ESRk-C_g9jlGlrXXJe0fElUBePTFI3jXfWoa_XjfABoI5g?e=s4ASlP) when using  B-U585I-IOT02A Board or Generic examples and layer detection
+ - [Keil.STM32H7RSxx_DFP.1.0.0-dev0.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/ET9w8HJ8AxdPlqpMyO82sAwBKizJPJkq1Db12c4-BPM9xQ?e=gZeJfV) when using STM32H7S78-DK Board
+ - [Keil.STM32H7S78-DK_BSP.1.0.0-dev3.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EZraNUUBXZRHp0NU8UwT40ABea8Dz530qYuqqqcQ8ivoMA?e=t5lJEG) when using STM32H7S78-DK Board
+ - [Keil.STM32H7xx_DFP.4.0.0-extgen2.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EXfv6wVPUjtCu7fIhewq-xoBDCQzXRRU-bWjgLdh6lCaOg?e=RN6htz) when using STM32H743I-EVAL Board
+ - [Keil.IMXRT1050-EVKB_BSP.1.2.0-dev0.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EX8EXdmI_8pOhcdwAY3zjNkB4pkjCSKxS-OGopE03Xvj6w?e=eKQUhv) when using Generic examples and layer detection
 
 
 ## Workflow
