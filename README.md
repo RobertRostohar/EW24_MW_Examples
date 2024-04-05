@@ -78,8 +78,6 @@ Blinky and MDK-Middleware examples for STM32H7S78-DK board.
 
 >Each example has two projects: Boot (Boot loader) and Application (actual application).
 
->Flashing (`Run`): Separately flash Boot and Application projects (select single project as active context at a time before flashing).
-
 >Examples do not yet support the STM32CubeMX code generator integration.
 
 

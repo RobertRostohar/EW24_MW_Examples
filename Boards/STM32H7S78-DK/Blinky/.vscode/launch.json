@@ -9,7 +9,7 @@
             "type": "arm-debugger",
             "request": "launch",
             "serialNumber": "${command:device-manager.getSerialNumber}",
-            "program": "${command:arm-debugger.getApplicationFile}",
+            "programs": "${command:cmsis-csolution.getBinaryFiles}",
             "cmsisPack": "${command:cmsis-csolution.getTargetPack}",
             "deviceName": "${command:cmsis-csolution.getDeviceName}",
             "processorName": "${command:cmsis-csolution.getProcessorName}"
