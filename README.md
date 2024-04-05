@@ -153,6 +153,7 @@ Compatible board layers (test packs)
    `cbuild setup <solution_name>.csolution.yml -l latest --update-rte`
  - Open `<solution_name>.cbuild-idx.yml` and examine detected `target-configurations` and their `Board-layer` variables.
  - Copy desired `Board-Layer` variable to `<solution_name>.csolution.yml` under `target-types`.
-   >In case `.cproject.yml` is nested in sub-directories relative to the `.csolution.yml` file,
-    adjust the path by adding an additional `../` for each nesting level.
+   >Solution directory must be on the same drive as the selected `Board-Layer`.
  - Layers are now configured, select desired solution with `Open CMSIS Solution` and continue with typical workflow as described above.
+   >Default scripts for running (with flashing) and debugging will be created and selected on the first use of `Run` and `Debug`.  
+   >VS Code `Arm CMSIS csoluton` extension current limitation: DFP and BSP are not recognized from the board layer and need to be manually added to the solution in order to use `Run` and `Debug`.
