@@ -11,7 +11,7 @@ Examples for STMicroelectronics STM32 based microcontrollers feature the **STM32
 
 ### Tools
 - Visual Studio Code with Arm Keil Studio Pack extension
-- [CMSIS-Toolbox 2.3.0-dev0](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases/tag/2.3.0-dev0) (not manged though vcpkg)
+- CMSIS-Toolbox 2.3.0 (manged though vcpkg)
 - Arm Compiler for Embedded (managed through vcpkg)
 - Arm Debugger (when debugging, managed through vcpkg)
 - [STM32CubeMX 6.11](https://www.st.com/en/development-tools/stm32cubemx.html) (for STMicroelectronics STM32 based microcontrollers)
@@ -47,7 +47,7 @@ Examples for STMicroelectronics STM32 based microcontrollers feature the **STM32
    - Examples for STM32 based microcontrollers are pre-configured using STM32CubeMX code generator.
    - In order to change the configuration
      - Use the following command (in VS Code Terminal) to run the generator:  
-       `csolution <solution_name>.csolution.yml -g CubeMX -c <context>`  
+       `csolution <solution_name>.csolution.yml run -g CubeMX -c <context>`  
        Example:  
        ```
        csolution Blinky.csolution.yml run -g CubeMX -c Blinky.Debug+B-U585I-IOT02A
