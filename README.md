@@ -76,9 +76,11 @@ Blinky and MDK-Middleware examples for STM32H7S78-DK board.
  - [MDK-Middleware USB Device HID](./Boards/STM32H7S78-DK/USB/Device/HID)
  - [MDK-Middleware USB Device Mass Storage](./Boards/STM32H7S78-DK/USB/Device/MassStorage)
 
->Examples for STM32H7S78-DK Board do not yet support the STM32CubeMX code generator integration.
+>Each example has two projects: Boot (Boot loader) and Application (actual application).
 
 >Flashing (`Run`): Separately flash Boot and Application projects (select single project as active context at a time before flashing).
+
+>Examples do not yet support the STM32CubeMX code generator integration.
 
 
 ## STMicroelectronics STM32H743I-EVAL Board
