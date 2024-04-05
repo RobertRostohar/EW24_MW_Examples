@@ -336,7 +336,7 @@ static void cmd_copy (char *par) {
   char *fname,*fnew,*fmer,*next;
   FILE *fin,*fout;
   uint32_t cnt,total;
-  char buf[512];
+  static char buf[512];
   bool merge;
 
   fname = get_entry(par, &next);
