@@ -21,7 +21,7 @@ Examples for STMicroelectronics STM32 based microcontrollers feature the **STM32
  - [ARM.CMSIS-Driver_STM32.1.0.0-dev39+gbd9215b.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EcsBeFeCkwVEkXtx8W_aJnoByDo6QQARAVmzXC5AmL4LPw?e=yyI52p) for STM32 based microcontrollers
  - [Keil.STM32U5xx_DFP.3.0.0-extgen0.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EVCZ53IRbz9BnrILt3T2XSYBX2v9ikAyFIaj6rFFUl-exA?e=YkyzK8) when using  B-U585I-IOT02A Board
  - [Keil.B-U585I-IOT02A_BSP.2.0.0-dev5.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EdVE9v-sLCZJuKvkStf_2LcBm4tX1LsIZGfhz5SvKt9dgg?e=EjLBha) when using  B-U585I-IOT02A Board or Generic examples and layer detection
- - [Keil.STM32H7RSxx_DFP.1.0.0-dev0.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/ET9w8HJ8AxdPlqpMyO82sAwBKizJPJkq1Db12c4-BPM9xQ?e=gZeJfV) when using STM32H7S78-DK Board
+ - [Keil.STM32H7RSxx_DFP.1.0.0-dev1.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/Ef071l9RW_pDmcdke7ieVGsB9rkOe7HlhMdq76-ecbHHrA?e=gHbHYd) when using STM32H7S78-DK Board
  - [Keil.STM32H7S78-DK_BSP.1.0.0-dev3.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EZraNUUBXZRHp0NU8UwT40ABea8Dz530qYuqqqcQ8ivoMA?e=t5lJEG) when using STM32H7S78-DK Board
  - [Keil.STM32H7xx_DFP.4.0.0-extgen2.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EXfv6wVPUjtCu7fIhewq-xoBDCQzXRRU-bWjgLdh6lCaOg?e=RN6htz) when using STM32H743I-EVAL Board
  - [Keil.IMXRT1050-EVKB_BSP.1.2.0-dev0.pack](https://armh-my.sharepoint.com/:u:/g/personal/robert_rostohar_arm_com/EX8EXdmI_8pOhcdwAY3zjNkB4pkjCSKxS-OGopE03Xvj6w?e=eKQUhv) when using Generic examples and layer detection
@@ -78,7 +78,7 @@ Blinky and MDK-Middleware examples for STM32H7S78-DK board.
 
 >Examples for STM32H7S78-DK Board do not yet support the STM32CubeMX code generator integration.
 
->Flashing (`Run') does not yet work. Use uVision with preliminary support for STM32H7RSxx to flash the boot loader and application.
+>Flashing (`Run`): Separately flash Boot and Application projects (select single project as active context at a time before flashing).
 
 
 ## STMicroelectronics STM32H743I-EVAL Board
