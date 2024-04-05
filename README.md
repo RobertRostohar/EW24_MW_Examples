@@ -34,7 +34,7 @@ Examples for STMicroelectronics STM32 based microcontrollers feature the **STM32
  - `Arm CMSIS csoluton` extension
    - Shows the solution with project files (including components) and provides shortcuts to commands for managing the project.
    - Use `Manage Software Components` to view selected Software Components.
-     >Current limitation: Software Components not shown correctly after build (incompatibility with cmsis-toolbox 2.3.0-dev0).
+     >Current limitation: Software Components not shown correctly after build (incompatibility with cmsis-toolbox 2.3.0).
    - Use `Select a Context for the Solution` to select the active context set.
    - Use `Build` to build the selected context set.
    - Use `Run` to flash and run the application.
