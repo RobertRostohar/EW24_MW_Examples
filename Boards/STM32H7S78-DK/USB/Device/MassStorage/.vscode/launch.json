@@ -12,7 +12,8 @@
             "programs": "${command:cmsis-csolution.getBinaryFiles}",
             "cmsisPack": "${command:cmsis-csolution.getTargetPack}",
             "deviceName": "${command:cmsis-csolution.getDeviceName}",
-            "processorName": "${command:cmsis-csolution.getProcessorName}"
+            "processorName": "${command:cmsis-csolution.getProcessorName}",
+            "debugFrom": "app_main"
         }
     ]
 }
