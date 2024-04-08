@@ -128,6 +128,7 @@ Compatible board layers (test packs)
    - NXP EVKB-IMXRT1050 board
  - Network examples
    - NXP EVKB-IMXRT1050 board
+     >Add global define CMSIS_VOUT to disable User LED (connected to Ethernet Reset).
  - USB Device examples
    - STMicroelectronics B-U585I-IOT02A board
 
